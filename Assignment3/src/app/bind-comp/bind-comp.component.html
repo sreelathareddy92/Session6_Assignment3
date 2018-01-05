@@ -1,0 +1,10 @@
+<!-- <p>
+  bind-comp works!
+</p> -->
+
+<!-- text box bind the value from component with the help of two-way binding -->
+FirstName:<input type="text" name="firstName" [(ngModel)]="firstName" #first/>
+LastName:<input type="text" name="lastName" [(ngModel)]="lastName" #last/>
+<!-- on button click function get the values and bind it to title with the new names. -->
+<button type="button" (click)="onSubmit(first.value,last.value)" >Submit</button>
+<h1>{{title}}</h1>
